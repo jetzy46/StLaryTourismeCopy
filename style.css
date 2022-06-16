@@ -1,0 +1,794 @@
+/* ------------------ Import ------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Montserrat:wght@400;600&family=Nothing+You+Could+Do&display=swap");
+
+/* ------------------ General ------------------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-x: hidden;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* ------------------ Header ------------------ */
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("./images/bg-tent.jpg") center/100% no-repeat;
+}
+
+.upper-header {
+  height: 5vh;
+  position: relative;
+}
+
+/* --- Seasons --- */
+
+.season-change {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.seasons {
+  display: flex;
+  align-items: center;
+  padding: 0.3em;
+  color: #2d3436;
+}
+
+.seasons div {
+  margin: 0;
+  padding: 0.6em;
+  font-size: 1.1em;
+  border-top: transparent 2px solid;
+}
+
+.seasons div:hover {
+  border-top: #2d3436 2px solid;
+}
+
+.winter {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.summer {
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-person-snowboarding,
+.fa-person-biking {
+  font-size: 1em;
+}
+
+/* --- Social Networks --- */
+
+.socials {
+  height: 5vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-blog {
+  height: 100%;
+  padding: 0 1em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #487eb0;
+}
+
+.social-blog .fa-comment-dots {
+  padding-right: 0.4em;
+}
+
+.link-socials-header {
+  height: 100%;
+  width: 5vh;
+  padding: 1em;
+  color: black;
+}
+
+.green-hover:hover {
+  background-color: #88ae50;
+}
+
+.blue-hover:hover {
+  background-color: #487eb0;
+}
+/* --- Navbar --- */
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.green-navbar {
+  height: 5.5em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #88ae50;
+}
+
+.tabs-green-navbar {
+  height: 100%;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.tabs-green-navbar:hover {
+  background-color: #739443;
+}
+
+.links-green-navbar {
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  position: relative;
+}
+
+.logo-container h3 {
+  margin: 0;
+  font-family: "Caveat", sans-serif;
+  font-size: 2.1em;
+  position: absolute;
+  left: 1em;
+  bottom: -0.5em;
+}
+
+/* --- Booking --- */
+
+.booking {
+  height: 40vh;
+  width: 15vw;
+  position: absolute;
+  top: 50%;
+  right: 1.5em;
+}
+
+.head-form {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #88ae50;
+}
+
+.form-booking {
+  height: 80%;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.form-booking select {
+  width: 100%;
+  margin: 0.2em;
+  padding: 0.6em;
+  border: 1px solid lightgray;
+  border-radius: 0.4em;
+  background-color: #fff;
+}
+
+.check-form {
+  display: flex;
+  align-items: center;
+}
+
+.check-form label {
+  color: black;
+  font-size: 0.8em;
+  margin-left: 0.5em;
+}
+
+.submit-booking {
+  width: 100%;
+  background-color: black;
+  color: #88ae50;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  padding: 0.6em;
+  border: none;
+}
+
+/* ------------------ Activities Section ------------------ */
+
+.activities-section {
+  position: relative;
+  color: black;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* ---  Grey Background --- */
+
+.grey-background {
+  position: absolute;
+  width: 100%;
+  height: 83%;
+  top: 0;
+  z-index: -1;
+  background-color: lightgrey;
+}
+
+/* --- Title --- */
+
+.activities-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-10deg);
+}
+
+.act-title {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.act-first-title {
+  margin: 0;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 1.5em;
+}
+
+.act-sec-title {
+  margin: 0;
+  font-family: "Nothing You Could Do", cursive;
+  color: #88ae50;
+  font-size: 2em;
+}
+
+.black-dash {
+  width: 80px;
+  height: 2px;
+  background: black;
+}
+
+/* --- Cards --- */
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.act-card {
+  width: 20em;
+  height: 30em;
+  margin: 0 1em;
+}
+
+.link-card {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+}
+.link-card:hover {
+  transition: background-color 0.3s;
+  background-color: rgba(136, 174, 80, 0.5);
+}
+.act-card:hover {
+  filter: teal;
+}
+
+.act-card h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.act-card h5 {
+  margin: 0;
+  padding: 0;
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.first-card {
+  background: url(./images/activities/home_ete_ambiance_village.jpg) center/100% no-repeat;
+}
+.second-card {
+  width: 20em;
+  height: 30em;
+  background: url(./images/activities/home_ete_sports_nature.jpg) center/100% no-repeat;
+}
+.third-card {
+  width: 20em;
+  height: 30em;
+  background: url(./images/activities/home_ete_thermalisme_spa.jpg) center/100% no-repeat;
+}
+.fourth-card {
+  width: 20em;
+  height: 30em;
+  background: url(./images/activities/home_ete_cyclo.jpg) center/100% no-repeat;
+}
+
+/* ------------------ Activities Section ------------------ */
+
+.attachment-section {
+  width: 100vw;
+  height: 55vh;
+  padding: 0 20vw;
+  background: url(./images/bg-footer-links.jpg) center/100% no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* --- Circles --- */
+
+.circles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.circles:hover {
+  transition: background-color 0.3s ease-out;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.circles a {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-circle {
+  width: 7em;
+  height: 7em;
+}
+
+.medium-circle {
+  width: 10em;
+  height: 10em;
+}
+
+.big-circle {
+  width: 13em;
+  height: 13em;
+}
+
+/* --- Text --- */
+
+.title-big-circle {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 2.5em;
+  /* text-transform: uppercase; */
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+
+.subtitle-big-circle {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.text-circle {
+  color: black;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.text-spacer {
+  padding-top: 0.5em;
+}
+
+/* --- Icon --- */
+
+.webcam-icon {
+  height: 3.5em;
+}
+
+.fa-map {
+  color: #88ae50;
+  font-size: 3em;
+}
+
+.fa-book-open {
+  color: #88ae50;
+  font-size: 3em;
+}
+
+/* ------------------ Advertise Section ------------------ */
+
+.advertise-section {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------ Text ------ */
+
+.adv-text-container {
+  width: 50%;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.adv-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-10deg);
+}
+
+.adv-title {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.adv-first-title {
+  margin: 0;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 1.5em;
+}
+
+.adv-sec-title {
+  margin: 0;
+  font-family: "Nothing You Could Do", cursive;
+  color: #88ae50;
+  font-size: 2.5em;
+}
+
+.adv-para {
+  width: 58%;
+}
+
+/* ------ Mosaic ----- */
+
+.adv-mosaic {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mosaic-1 {
+  width: 60%;
+  height: 50%;
+  background: url(./images/advertise/sunset.jpg) center/100% no-repeat;
+}
+
+.mosaic-2 {
+  width: 40%;
+  height: 50%;
+  background: url(./images/advertise/bridge.jpg) center/100% no-repeat;
+}
+
+.mosaic-3 {
+  width: 40%;
+  height: 50%;
+  background: url(./images/advertise/snow.jpg) center/100% no-repeat;
+}
+
+.mosaic-4 {
+  width: 60%;
+  height: 50%;
+  background: url(./images/advertise/lake.jpg) center/100% no-repeat;
+}
+
+/* ------------------ Footer ------------------ */
+
+footer {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* equal to the fixed navbar height */
+  margin-bottom: 3em;
+}
+
+/* ------ Cards ------ */
+
+.card-footer-container {
+  width: 100%;
+  padding: 2em 10em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-footer {
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 5em;
+}
+
+/*  Card 1 */
+
+.adress-container p {
+  font-weight: bold;
+}
+
+.phone-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone-container p {
+  margin: 0;
+}
+
+.button-card-ft {
+  color: #88ae50;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.4em 1em;
+  border: 2px solid #88ae50;
+  position: absolute;
+  bottom: 1em;
+}
+
+.button-card-ft:hover {
+  color: black;
+}
+
+/* Card 2 */
+
+.text-container-card-ft-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-10deg);
+}
+
+.card-ft-2-title-container {
+  margin: 0 1em;
+}
+
+.card-ft-2-title {
+  margin: 0;
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 2.2em;
+  color: #88ae50;
+  text-align: center;
+}
+
+.card-ft-2-subtitle {
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+.footer-socials {
+  padding: 0.5em;
+  font-size: 1.7em;
+  color: grey;
+}
+
+.footer-socials:hover {
+  color: black;
+}
+
+/* Card 3 */
+
+.map-container {
+  width: 16em;
+  position: relative;
+}
+
+.markers-city {
+  position: absolute;
+  display: flex;
+}
+
+.main-city {
+  left: 2em;
+  bottom: 4.3em;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+}
+
+.sec-city {
+  left: 6.6em;
+  bottom: 10.2em;
+  font-size: 0.6em;
+  align-items: flex-end;
+}
+
+.dot-map {
+  height: 6px;
+  width: 6px;
+  background-color: #88ae50;
+  border-radius: 100%;
+}
+
+.text-map {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*  Dedicated space */
+
+.links-dedicated-spaces {
+  margin: 0;
+  padding: 0 1em;
+  color: #88ae50;
+  text-transform: uppercase;
+}
+
+.links-dedicated-spaces:hover {
+  color: #739443;
+}
+
+/*  Sponsors */
+
+.sponsors-container {
+  margin: 0;
+  padding: 2em;
+}
+
+.sponsors-logo {
+  width: 7em;
+}
+
+/* ------------------ Bottom Nav ------------------ */
+
+.bottom-nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #e9e9e9;
+  box-sizing: border-box;
+}
+
+.links-bottom-nav {
+  padding: 0.8em;
+  color: black;
+  font-size: 0.9em;
+}
+
+.links-bottom-nav:hover {
+  transition: background-color 0.4s;
+  background-color: grey;
+}
+
+/* ------------------ Fixed Nav ------------------ */
+
+.fixed-black-nav {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 3em;
+  bottom: 0;
+}
+
+.links-container {
+  padding: 0;
+  display: flex;
+}
+
+.links-fixed-nav {
+  color: white;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+.links-fixed-nav:hover {
+  background-color: #88ae50;
+}
+
+.links-fixed-nav:hover i {
+  color: white;
+}
+
+.icon-fixed-nav {
+  color: #88ae50;
+  padding: 0 0.4em;
+}
+
+.webcam-icon-fixed-nav {
+  height: 1em;
+}

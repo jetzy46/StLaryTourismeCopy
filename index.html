@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>L’Office de Tourisme de Saint-Lary dans les Pyrénées</title>
+  </head>
+  <body>
+    <header>
+      <div class="upper-header">
+        <ul class="season-change">
+          <li class="seasons winter">
+            <div>Hiver</div>
+            <i class="fa-solid fa-person-snowboarding"></i>
+          </li>
+          <li class="seasons summer">
+            <div>Eté</div>
+            <i class="fa-solid fa-person-biking"></i>
+          </li>
+        </ul>
+        <div class="socials">
+          <div class="social-blog">
+            <p>Mon blog</p>
+            <i class="fa-solid fa-comment-dots"></i>
+          </div>
+          <a class="link-socials-header green-hover" href="https://www.youtube.com/channel/UC4xMPF9l7Uyr-m_LIDlRmYA">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a class="link-socials-header blue-hover" href="https://www.instagram.com/saintlary/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="link-socials-header green-hover" href="https://www.facebook.com/saintlary">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <select name="language" id="language-select">
+            <option value="fr">Fr</option>
+            <option value="en">En</option>
+            <option value="es">Es</option>
+          </select>
+        </div>
+      </div>
+      <div class="navbar-container">
+        <div class="logo-container">
+          <img src="images/logo_21.png" alt="logo Saint Lary" />
+          <h3>Vivre les Pyrénées</h3>
+        </div>
+        <ul class="green-navbar">
+          <li class="tabs-green-navbar">
+            <a class="links-green-navbar" href="https://www.saintlary.com/ete/decouvrir"> découvrir </a>
+          </li>
+          <li class="tabs-green-navbar">
+            <a class="links-green-navbar" href="https://www.saintlary.com/ete/bouger"> a faire </a>
+          </li>
+          <li class="tabs-green-navbar">
+            <a class="links-green-navbar" href="https://www.saintlary.com/ete/votre-sejour"> votre séjour </a>
+          </li>
+          <li class="tabs-green-navbar">
+            <a class="links-green-navbar" href="https://www.saintlary.com/ete/infos-pratiques"> pratique </a>
+          </li>
+          <li class="tabs-green-navbar">
+            <i class="fa-solid fa-magnifying-glass fa-flip-horizontal"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="booking">
+        <div class="head-form">réserver votre séjour</div>
+        <form class="form-booking">
+          <select name="" id="">
+            <option value="chalet">Appartement, Chalet, Résidence</option>
+            <option value="hotel">Hôtels & Chambres d'hôtes</option>
+          </select>
+          <select name="" id="">
+            <option value="sat">Du samedi au samedi</option>
+            <option value="we">Week-end et court séjour</option>
+          </select>
+          <select name="" id="">
+            <option value="05/03/2022">Samedi 5 Mars</option>
+            <option value="12/03/2022">Samedi 12 Mars</option>
+            <option value="19/03/2022">Samedi 19 Mars</option>
+            <option value="26/03/2022">Samedi 26 Mars</option>
+            <option value="02/04/2022">Samedi 2 Avril</option>
+          </select>
+          <select name="" id="">
+            <option value="1">1 semaine</option>
+            <option value="2">2 semaines</option>
+            <option value="3">3 semaines</option>
+            <option value="4">4 semaines</option>
+          </select>
+          <div class="check-form">
+            <input type="checkbox" id="unknown-date" />
+            <label for="unknown-date">Je n'ai pas de dates précises </label>
+          </div>
+          <select name="" id="">
+            <option value="1">1 adulte</option>
+            <option value="2">2 adultes</option>
+            <option value="3">3 adultes</option>
+            <option value="4">4 adultes</option>
+            <option value="5">5 adultes</option>
+            <option value="6">6 adultes</option>
+            <option value="7">7 adultes</option>
+            <option value="8">8 adultes</option>
+            <option value="9">9 adultes</option>
+            <option value="10">10 adultes</option>
+          </select>
+          <select name="" id="">
+            <option value="none">Pas d'enfant</option>
+            <option value="1">1 enfant</option>
+            <option value="2">2 enfants</option>
+            <option value="3">3 enfants</option>
+            <option value="4">4 enfants</option>
+            <option value="5">5 enfants</option>
+          </select>
+          <button class="submit-booking" type="submit">réserver</button>
+        </form>
+      </div>
+    </header>
+    <section class="activities-section">
+      <div class="grey-background"></div>
+      <div class="activities-title-container">
+        <div class="black-dash"></div>
+        <div class="act-title">
+          <h4 class="act-first-title">Saint-Lary</h4>
+          <h4 class="act-sec-title">c'est aussi</h4>
+        </div>
+        <div class="black-dash"></div>
+      </div>
+      <div class="card-container">
+        <div class="first-card act-card">
+          <a class="link-card" href="https://www.saintlary.com/ete/decouvrir/la-destination-saint-lary">
+            <h6 class="subtitle-card">une ambiance</h6>
+            <h5 class="title-card">un village unique</h5>
+          </a>
+        </div>
+        <div class="second-card act-card">
+          <a class="link-card" href="https://www.saintlary.com/ete/votre-sejour/bouger/activites-de-montagne">
+            <h6 class="subtitle-card">les activitées</h6>
+            <h5 class="title-card">sport & nature</h5>
+          </a>
+        </div>
+        <div class="third-card act-card">
+          <a class="link-card" href="https://www.saintlary.com/ete/decouvrir/sensoria-centre-bien-etre">
+            <h6 class="subtitle-card">thermalisme et spa</h6>
+            <h5 class="title-card">prenez soin de vous</h5>
+          </a>
+        </div>
+        <div class="fourth-card act-card">
+          <a class="link-card" href="https://www.saintlary.com/ete/bouger/sports/cyclo">
+            <h6 class="subtitle-card">spécial cyclo</h6>
+            <h5 class="title-card">col de portet</h5>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="attachment-section">
+      <a href="https://www.saintlary.com/ete/infos-pratiques/photos-videos">
+        <div class="small-circle circles">
+          <p class="text-circle">photos vidéos</p>
+        </div>
+      </a>
+      <a href="https://www.saintlary.com/ete/brochures-et-plans-ete#!/plans">
+        <div class="medium-circle circles">
+          <i class="fa-regular fa-map"></i>
+          <p class="text-circle text-spacer">cartes et plans</p>
+        </div>
+      </a>
+      <a href="https://www.saintlary.com/ete/bouger/webcams">
+        <div class="big-circle circles">
+          <img src="./images/webcam.png" alt="icon webcam" class="webcam-icon" />
+          <h5 class="title-big-circle">Webcams</h5>
+          <h6 class="subtitle-big-circle">de saint-lary</h6>
+        </div>
+      </a>
+      <a href="https://www.saintlary.com/ete/brochures-et-plans-ete">
+        <div class="medium-circle circles">
+          <i class="fa-solid fa-book-open"></i>
+          <p class="text-circle text-spacer">brochures</p>
+        </div>
+      </a>
+      <a href="https://www.saintlary.com/ete/nous-contacter">
+        <div class="small-circle circles">
+          <p class="text-circle">nous contacter</p>
+        </div>
+      </a>
+    </section>
+    <section class="advertise-section">
+      <div class="adv-text-container">
+        <div class="adv-title-container">
+          <div class="black-dash"></div>
+          <div class="adv-title">
+            <h4 class="adv-sec-title">Choisir</h4>
+            <h4 class="adv-first-title">Saint-Lary</h4>
+          </div>
+          <div class="black-dash"></div>
+        </div>
+        <div class="adv-para">
+          <b>Saint-Lary</b> au cœur des <b>Pyrénées</b> vous offre des paysages époustouflants à découvrir tout au long
+          de l’année. Retrouvez à proximité de ce <b>village</b> chaleureux de <b>montagne</b>, les réserves naturelles
+          du <b>Néouvielle</b>, du Rioumajou et du Moudang. Trouvez votre hébergement et découvrez de nombreuses
+          activités : <b>station de ski familiale</b> par excellence ! Profitez également de la saison estivale pour
+          vous ressourcer aux thermes et à <b>Sensoria</b> (espace de bien-être) ou pour découvrir un patrimoine
+          exceptionnel. De la <b>pêche</b>, du <b>vélo</b> de route… Bref, tout pour de vraies <b>vacances</b> à la
+          montagne !
+        </div>
+      </div>
+      <div class="adv-mosaic">
+        <div class="mosaic-1"></div>
+        <div class="mosaic-2"></div>
+        <div class="mosaic-3"></div>
+        <div class="mosaic-4"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="card-footer-container">
+        <div class="card-footer card-ft-1">
+          <img class="logo-card-ft-1" src="./images/logo_21.png" alt="logo Saint Lary" />
+          <div class="adress-container">
+            <p>37 Rue Vincent Mir</p>
+            <p>65170 Saint-Lary-Soulan</p>
+            <div class="phone-container">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>+33 (0) 5 62 39 50 81</p>
+            </div>
+          </div>
+          <a class="button-card-ft" href="https://www.saintlary.com/ete/nous-contacter">nous contacter</a>
+        </div>
+        <div class="card-footer card-ft-2">
+          <div class="text-container-card-ft-2">
+            <div class="black-dash"></div>
+            <div class="card-ft-2-title-container">
+              <h4 class="card-ft-2-title">Suivez-nous</h4>
+              <h4 class="card-ft-2-subtitle">et restez informés</h4>
+            </div>
+            <div class="black-dash"></div>
+          </div>
+          <div class="socials-card-ft-2">
+            <a href="">
+              <i class="footer-socials fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="">
+              <i class="footer-socials fa-brands fa-youtube"></i>
+            </a>
+            <a href="">
+              <i class="footer-socials fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="footer-socials fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <a class="button-card-ft" href="https://www.saintlary.com/ete/inscription-a-la-newsletter"
+            >inscrivez-vous à notre newsletter</a
+          >
+        </div>
+        <div class="card-footer card-ft-3">
+          <div class="map-container">
+            <img src="./images/mapfr.svg" alt="map France" />
+            <div class="markers-city main-city">
+              <div class="dot-map"></div>
+              <p class="text-map">saint-lary soulan</p>
+            </div>
+            <div class="markers-city sec-city">
+              <div class="dot-map"></div>
+              <p class="text-map">bordeaux</p>
+            </div>
+          </div>
+          <a class="button-card-ft" href="https://www.saintlary.com/ete/comment-venir-0">comment venir ?</a>
+        </div>
+      </div>
+      <div>
+        <a class="links-dedicated-spaces" href="https://www.saintlary.com/ete/club-des-ambassadeurs-proprietaires"
+          >propriétaires</a
+        >
+        <a class="links-dedicated-spaces" href="https://www.saintlary.com/ete/espace-professionnel">pro</a>
+        <a class="links-dedicated-spaces" href="https://www.saintlary.com/ete/espace-presse">presse</a>
+        <a class="links-dedicated-spaces" href="https://www.saintlary.com/ete/espace-groupe">groupes</a>
+      </div>
+      <div class="sponsors-container">
+        <a href="https://www.ogeu.com/fr"><img class="sponsors-logo" src="./images/sponsors/logo_ogeu.png" alt="" /></a>
+        <a href="https://pyrenex.com/fr/"
+          ><img class="sponsors-logo" src="./images/sponsors/logo_pyrenex.png" alt=""
+        /></a>
+        <a href="https://www.groupe-clim.mercedes-benz.fr/fr/desktop/home.html"
+          ><img class="sponsors-logo" src="./images/sponsors/logo_mercedes.png" alt=""
+        /></a>
+        <a href="https://www.haribo.com/fr-fr"
+          ><img class="sponsors-logo" src="./images/sponsors/logo_haribo.png" alt=""
+        /></a>
+        <a href="https://www.villacampa-pyrenees.com/"
+          ><img class="sponsors-logo" src="./images/sponsors/logo_villacampa.png" alt=""
+        /></a>
+      </div>
+      <ul class="bottom-nav">
+        <li class="links-bottom-nav"><a href="https://www.saintlary.com/ete/nos-partenaires">Nos partenaires</a></li>
+        <li class="links-bottom-nav">
+          <a href="https://www.saintlary.com/ete/nos-engagements-et-labels">Nos labels</a>
+        </li>
+        <li class="links-bottom-nav"><a href="https://www.saintlary.com/ete/mentions-legales">Mentions légales</a></li>
+        <li class="links-bottom-nav"><a href="https://www.saintlary.com/ete/sitemap">Plan du site</a></li>
+      </ul>
+    </footer>
+    <div class="fixed-black-nav">
+      <ul class="links-container">
+        <li class="tabs-fixed-nav">
+          <a class="links-fixed-nav" href="https://www.saintlary.com/ete/votre-sejour/bouger/agenda">
+            <i class="fa-regular fa-calendar-days icon-fixed-nav"></i>
+            agenda
+          </a>
+        </li>
+        <li class="tabs-fixed-nav">
+          <a
+            class="links-fixed-nav"
+            href="https://www.saintlary.com/ete/votre-sejour/dormir/appartements-chalets-et-gites/meubles-labellises"
+          >
+            <i class="fa-regular fa-gem icon-fixed-nav"></i>
+            meublés labélisés
+          </a>
+        </li>
+        <li class="tabs-fixed-nav">
+          <a class="links-fixed-nav" href="https://www.saintlary.com/ete/votre-sejour/nos-offres-de-sejours">
+            <i class="fa-solid fa-tag icon-fixed-nav"></i>
+            offres de séjours
+          </a>
+        </li>
+        <li class="tabs-fixed-nav">
+          <a class="links-fixed-nav" href="https://www.saintlary.com/ete/bouger/webcams">
+            <img src="./images/webcam.png" alt="icon webcam" class="webcam-icon-fixed-nav icon-fixed-nav" />
+            webcams
+          </a>
+        </li>
+        <li class="tabs-fixed-nav">
+          <a class="links-fixed-nav" href="https://www.saintlary.com/ete/nous-contacter">
+            <i class="fa-solid fa-envelope-open-text icon-fixed-nav"></i>
+            contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
